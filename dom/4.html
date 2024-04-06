@@ -5,7 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: #212121; color:#fff;">
+    <ul class="language">
+        <li>JS</li>
+    </ul>
 </body>
+<script>
+    function addLanguage(languageName){
+        const li = document.createElement('li');
+        li.innerHTML = `${languageName}`;
+        document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("C++")
+
+    function addOptimizeLanguage(languageName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(languageName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptimizeLanguage("Java")
+    addOptimizeLanguage("golang")
+    
+    // addLanguage it always traverse whole the tree but addOptimizeLanguage it only create next node not traverse whole the tree
+
+    //Edit
+
+    const se
+
+</script>
 </html>
