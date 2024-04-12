@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <ul id="images">
+        <li><img width="200px" src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" 
+            id="nature" alt="1st"></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTFrhr_-pYR74jUgOy7IerAoHAX3zPIZZcg&s" id="tiger" alt="2nd" width="200ox"></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlrZqTCInyg6RfYC7Ape20o-EWP1EN_A8fOA&s" id="dog"  alt="3rd" width="200ox"></li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHUhV2CDxDfe-0PpGCPJjA678hwoC56alxLw&s" id="flower" alt="4th" width="200px"></li>
+        <li><a style="color: aliceblue;" href="https://govind2006.github.io/" id="google">Website</a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById('tiger').onclick=function(){
+    //     alert('tiger clicked')
+    // }
+
+     // attachEvent() 
+    // jQuery - on
+
+    document.getElementById('tiger').addEventListener('click',function(e){
+        console.log(e)
+    },false)
+   // type, timestamp, defaultPrevented, target, toElement, sourceElement, CurrentTarget, clientX, clientY, screenX, screenY
+   // altkey, ctrlKey, shiftkey, keyCode
+    
+
+
+</script>
+</html>
