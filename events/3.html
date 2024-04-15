@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Events</title>
+</head>
+<body>
+    <h1>Govind</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const sayDate = function(x){
+    console.log(x," I love You",Date.now())
+}
+let val;
+// const mainFunction = function(x){
+//     if(x==0){
+//         clearInterval(val);
+//     }
+//     if(x==1){
+//         val=setInterval(sayDate,1000,'Hi')
+//     }
+// }
+
+// document.querySelector('#stop').addEventListener('click',function(e){
+//     mainFunction(0)
+// })
+
+// document.querySelector('#start').addEventListener('click',function(e){
+//     mainFunction(1)
+// })
+
+const bt = document.querySelectorAll('button');
+bt.forEach(function(e){
+    e.addEventListener('click',function(e1){
+        if(e1.target.id=='stop'){
+            clearInterval(val);
+        }
+        if(e1.target.id=='start'){
+            val=setInterval(sayDate,1000,'Hi');
+        }
+    })
+})
+
+</script>
+</html>
