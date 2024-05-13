@@ -12,7 +12,7 @@
 </body>
 <script>
     const sayDate = function(x){
-    console.log(x," I love You",Date.now())
+    console.log(x," I am Govind",Date.now())
 }
 let val;
 // const mainFunction = function(x){
@@ -37,9 +37,12 @@ bt.forEach(function(e){
     e.addEventListener('click',function(e1){
         if(e1.target.id=='stop'){
             clearInterval(val);
+            val=null;
         }
         if(e1.target.id=='start'){
-            val=setInterval(sayDate,1000,'Hi');
+            if(!val){
+                val=setInterval(sayDate,1000,'Hi');
+            }
         }
     })
 })
