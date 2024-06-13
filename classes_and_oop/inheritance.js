@@ -7,7 +7,7 @@ class User{
     }
 }
 
-class Teahcer extends User{
+class Teacher extends User{
     constructor(username,email,password){
         super(username)
         this.email=email
@@ -19,7 +19,9 @@ class Teahcer extends User{
     }
 }
 
-const t1 = new Teahcer("u1","abc@ge.com","123")
-
+const t1 = new Teacher("u1","abc@ge.com","123")
+// t1.logMe()
 // console.log(t1.addcourse());
-t1.addcourse();
+// t1.addcourse();
+
+// console.log(t1 instanceof User);
